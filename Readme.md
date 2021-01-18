@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Евгений Максутов](https://up.htmlacademy.ru/htmlcss/30/user/1675851).
-* Наставник: [Татьяна Симоненко](https://up.htmlacademy.ru/htmlcss/30/user/id6613).
+* Наставник: [Татьяна Симоненко](https://up.htmlacademy.ru/htmlcss/30/user/6613).
 
 ---
 
