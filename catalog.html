@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Каталог &mdash; Девайс</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a href="index.html"><img src="https://via.placeholder.com/163x35" width="163" height="35" alt="Лого интернет-магазина гаджетов &mdash; Девайс"></a>
+				<div>
+					<form action="https://echo.htmlacademy.ru" method="get">
+						<input type="search" placeholder="Поиск по сайту">
+						<button type="submit">Найти</button>
+					</form>
+					<ul>
+						<li>
+							<a href="#">Евгений Максутов</a>
+							<a href="#">Выйти</a>
+						</li>
+						<li><a href="#">Сравнить</a></li>
+						<li><a href="#">Корзина</a></li>
+					</ul>
+				</div>
+				<div>
+					<ul>
+						<li><a href="catalog.html">Каталог товаров</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Гарантия</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>			
+			</nav>
+		</header>
+
+		<main>
+			<section>
+				<h1>Моноподы для селфи</h1>
+				<ul>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="catalog.html">Каталог товаров</a></li>
+					<li>Моноподы для селфи</li>
+				</ul>
+			</section>
+
+			<div>
+				<section>
+					<h2>Фильтр товаров</h2>
+					<p>Фильтр:</p>
+					<form action="https://echo.htmlacademy.ru" method="get" oninput="priceoutput.value=pricecount.value">
+						<fieldset>
+							<legend>Стоимость</legend>
+							<input type="range" id="pricecount" name="pricecount" min="0" max="10000" value="5000"><br>
+							<output name="priceoutput">5000</output>
+						</fieldset>
+
+						<fieldset>
+							<legend>Цвет</legend>
+							<ul>
+								<li>
+									<input type="checkbox" name="uberblack" id="filter-black" checked>
+									<label for="filter-black">Черный</label>
+								</li>
+								<li>
+									<input type="checkbox" name="gandalfwhite" id="filter-white">
+									<label for="filter-white">Белый</label>
+								</li>
+								<li>
+									<input type="checkbox" name="lagunablue" id="filter-blue" checked>
+									<label for="filter-blue">Синий</label>
+								</li>
+								<li>
+									<input type="checkbox" name="mtsred" id="filter-red" checked>
+									<label for="filter-red">Красный</label>
+								</li>
+								<li>
+									<input type="checkbox" name="ponypink" id="filter-pink">
+									<label for="filter-pink">Розовый</label>
+								</li>
+							</ul>
+						</fieldset>
+
+						<fieldset>
+							<legend>Bluetooth</legend>
+							<ul>
+								<li>
+									<input type="radio" name="bluetooth" value="yes" id="filer-yes" checked>
+									<label for="filer-yes">Есть</label>
+								</li>
+								<li>
+									<input type="radio" name="bluetooth" value="no" id="filer-no">
+									<label for="filer-no">Нет</label>
+								</li>
+							</ul>
+						</fieldset>
+						<button type="submit">Показать</button>
+					</form>
+				</section>
+
+				<section>
+					<h2>Сортировка товаров</h2>
+					<p>Сортировка:</p>
+					<ul>
+						<li>По цене</li>
+						<li><a href="#">По типу</a></li>
+						<li><a href="#">По популярности</a></li>
+					</ul>
+					<div>
+						<article>
+							<img src="https://via.placeholder.com/360x380" width="360" height="380" alt="Любительская селфи-палка">
+							<a href="#">
+								<h3>Любительская селфи-палка</h3>
+								<p>1 100 руб.</p>
+							</a>
+							<div>
+								<button type="button">В корзину</button>
+								<button type="button">Добавить к сравнению</button>
+							</div>
+						</article>
+
+						<article>
+							<img src="https://via.placeholder.com/360x380" width="360" height="380" alt="Профессиональная селфи-палка">
+							<a href="#">
+								<h3>Профессиональная селфи-палка</h3>
+								<p>1 500 руб.</p>
+							</a>
+							<div>
+								<button type="button">В корзину</button>
+								<button type="button">Добавить к сравнению</button>
+							</div>		
+						</article>
+
+						<article>	
+							<img src="https://via.placeholder.com/360x380" width="360" height="380" alt="Непотопляемая селфи-палка">
+							<a href="#">
+								<h3>Непотопляемая селфи-палка</h3>
+								<p>1 500 руб.</p>
+							</a>
+							<div>
+								<button type="button">В корзину</button>
+								<button type="button">Добавить к сравнению</button>
+							</div>		
+						</article>
+
+						<article>		
+							<img src="https://via.placeholder.com/360x380" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+							<a href="#">
+								<h3>Селфи-палка «Следуй за мной»</h3>
+								<p>1 900 руб.</p>
+							</a>
+							<div>
+								<button type="button">В корзину</button>
+								<button type="button">Добавить к сравнению</button>
+							</div>	
+						</article>
+					</div>		
+					<div>
+						<a href="#">Назад</a>
+						<ul>
+							<li>1</li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+						</ul>
+						<a href="#">Вперед</a>
+					</div>
+				</section>
+			</div>
+		</main>
+
+		<footer>
+			<section>
+				<a href="index.html"><img src="https://via.placeholder.com/163x35" width="163" height="35" alt="Лого интернет-магазина гаджетов &mdash; Девайс"></a>
+				<ul>
+					<li>
+						<a href="#">Евгений Максутов</a>
+						<a href="#">Выйти</a>
+					</li>
+					<li><a href="#">Сравнить</a></li>
+					<li><a href="#">Корзина</a></li>
+				</ul>
+			</section>
+
+			<section>
+				<div>
+					<h2>Как нас найти</h2>
+					<p>г. Москва, ул. Строителей, 15</p>
+				</div>
+				<ul>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Гарантия</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<p>Тел.: <a href="tel:+74954959595">+7 (495) 495-95-95</a></p>
+			</section>
+
+			<section>
+				<div>
+					<h2>Мы в соцсетях</h2>
+					<ul>
+						<li><a href="#">Фейсбук</a></li>
+						<li><a href="#">Инстаграм</a></li>
+						<li><a href="#">Твиттер</a></li>
+					</ul>
+				</div>
+				<a href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
+			</section>
+		</footer>
+	</body>
+</html>
