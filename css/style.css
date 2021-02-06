@@ -1,0 +1,349 @@
+/* Fonts */
+
+@font-face {
+	font-family: "Open Sans";
+	font-weight: 300;
+	font-style: normal;
+	src:	local("Open Sans"),
+			url("../fonts/opensanslight.woff2") format("woff2"),
+			url("../fonts/opensanslight.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Open Sans";
+	font-weight: 400;
+	font-style: normal;
+	src:	local("Open Sans"),
+			url("../fonts/opensans.woff2") format("woff2"),
+			url("../fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Gilroy";
+	font-weight: 300;
+	font-style: normal;
+	src:	local("Gilroy"),
+			url("../fonts/gilroylight.woff2") format("woff2"),
+			url("../fonts/gilroylight.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Gilroy";
+	font-weight: 800;
+	font-style: normal;
+	src:	local("Gilroy"),
+			url("../fonts/gilroyextrabold.woff2") format("woff2"),
+			url("../fonts/gilroyextrabold.woff") format("woff");
+}
+
+/* Variables */
+
+:root {
+	--basic-black: #000000;
+	--basic-dark: #363636;
+	--basic-white: #ffffff;
+	--basic-grey: #464646;
+	--basic-half-grey: #7e7e7e;
+	--basic-grey-light: #e5e5e5;
+	--special-yellow: #f7e296;
+	--special-green: #91c92f;
+	--special-yellow-dark: #f0c52e;
+}
+
+/* Global */
+
+.page-body {
+	min-width: 1160px;
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	color: var(--basic-black);
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	color: var(--basic-black);
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.hidden {
+	display: none;
+}
+
+.title-high {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 800;
+	font-size: 47px;
+	line-height: 58px;
+	letter-spacing: 0.2em;
+}
+
+.title-mid {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 800;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+.btn {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 22px;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+}
+
+/*  Main Header */
+
+.main-header {
+	background-color: var(--special-yellow);
+}
+
+/* Search */
+
+.search-input,
+.search-input::placeholder {
+	font: inherit;
+}
+
+.search-input::placeholder {
+	opacity: 0.3;
+}
+
+.search-input:hover::placeholder,
+.search-input:focus::placeholder {
+	opacity: 0.6;
+}
+
+/* Navigation */
+
+.site-navigation a {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 22px;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;	
+}
+
+.profile-navigation a:hover,
+.profile-navigation a:focus,
+.site-navigation a:hover,
+.site-navigation a:focus {
+	opacity: 0.6;
+}
+
+.profile-navigation a:active,
+.site-navigation a:active {
+	opacity: 0.3;
+}
+
+/* Products */
+
+.product-item h2 {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 800;
+	font-size: 179px;
+	line-height: 219px;
+}
+
+.product-item .title-high {
+	letter-spacing: 0;
+}
+
+.product-descr {
+	line-height: 20px;
+}
+
+.product-data b {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 300;
+	font-size: 13px;
+	line-height: 15px;
+	letter-spacing: 0.1em;
+}
+
+.product-data p {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 300;
+	font-size: 36px;
+	line-height: 42px;
+	letter-spacing: 0.1em;
+}
+
+/* Categories */
+
+.category-item h3 {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 22px;
+	letter-spacing: 0.05em;
+}
+
+/* Services */
+
+.services {
+	background-color: var(--basic-grey-light);
+}
+
+.service-descr {
+	line-height: 30px;
+}
+
+/* About */
+
+.about p {
+	line-height: 28px;
+}
+
+.about-delivery a {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 800;
+	font-size: 16px;
+	line-height: 28px;
+}
+
+/* Contacts */
+
+.contacts p {
+	line-height: 28px;
+}
+
+.map {
+	background-color: var(--basic-grey-light);
+}
+
+/* Main Footer */
+
+.main-footer {
+	color: var(--basic-white);
+	background-color: var(--basic-dark);
+}
+
+.main-footer a {
+	color: var(--basic-white);
+}
+
+.footer-high a {
+	opacity: 0.7;
+}
+
+.footer-high a:hover,
+.footer-high a:focus {
+	opacity: 1;
+}
+
+.footer-high a:active {
+	opacity: 0.3;
+}
+
+/* Page Header */
+
+.page-header .title-high {
+	letter-spacing: 0;
+}
+
+/* Breadcrumbs */
+
+.breadcrumbs a {
+	opacity: 0.3;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+	opacity: 0.6;
+}
+
+.breadcrumbs a:active {
+	opacity: 0.1;
+}
+
+/* Sorter */
+
+.sorter {
+	background-color: var(--basic-grey-light);
+}
+
+.sorter-item a {
+	font-size: 14px;
+	opacity: 0.3;
+}
+
+.sorter-item a:hover,
+.sorter-item a:focus {
+	opacity: 0.6;
+}
+
+.sorter-item a:active {
+	opacity: 1;
+}
+
+.sorter-item-current a {
+	opacity: 1;
+}
+
+/* Catalog */
+
+.catalog-item h3 {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 22px;
+	letter-spacing: 0.05em;
+}
+
+.catalog-item p {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 18px;
+	letter-spacing: 0.05em;
+}
+
+.btn-add-to-match {
+	font-size: 13px;
+	line-height: 18px;
+	letter-spacing: 0.1em;
+}
+
+/* Pagination */
+
+.pagination-link {
+	font-family: "Gilroy", "Arial", sans-serif;
+	font-weight: 800;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.pagination-item a {
+	opacity: 0.3;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+	opacity: 0.6;
+}
+
+.pagination-item .pagination-link-current,
+.pagination-item a:active {
+	opacity: 1;
+}
