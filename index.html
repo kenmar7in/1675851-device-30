@@ -11,40 +11,44 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body class="page-body">
-		<header class="main-header">
-			<nav class="main-navigation">
-				<a class="main-logo" href=""><img src="img/logo.svg" width="163" height="35" alt="Лого интернет-магазина гаджетов &mdash; Девайс"></a>
-				<div>
-					<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-						<input class="search-input" type="search" placeholder="Поиск по сайту">
-						<button class="search-btn" type="submit">Найти</button>
-					</form>
-					<ul class="profile-navigation">
-						<li><a href="#">Войти</a></li>
-						<li><a href="#">Сравнить</a></li>
-						<li><a href="#">Корзина</a></li>
-					</ul>
-				</div>
-				<div>
-					<ul class="site-navigation">
-						<li><a href="catalog.html">Каталог товаров</a></li>
-						<li><a href="#">Доставка</a></li>
-						<li><a href="#">Гарантия</a></li>
-						<li><a href="#">Контакты</a></li>
-					</ul>
-				</div>			
-			</nav>
+		<header class="main-header container1160">
+			<div class="main-header-bar">
+				<nav class="main-navigation container1040">
+					<a class="main-logo" href=""><img src="img/logo.svg" width="163" height="35" alt="Лого интернет-магазина гаджетов &mdash; Девайс"></a>
+					<div class="nav-section-top">
+						<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+							<input class="search-input" type="search" placeholder="Поиск по сайту">
+							<button class="search-btn" type="submit">Найти</button>
+						</form>
+						<ul class="profile-navigation">
+							<li><a href="#">Войти</a></li>
+							<li><a href="#">Сравнить</a></li>
+							<li><a href="#">Корзина</a></li>
+						</ul>
+					</div>
+					<div class="nav-section-bottom">
+						<ul class="site-navigation">
+							<li><a href="catalog.html">Каталог товаров</a></li>
+							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Гарантия</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>			
+				</nav>
+			</div>
 		</header>
 
 		<main>
-			<section class="products">
-				<ul class="products-list">
+			<section class="products container1160">
+				<ul class="products-list container1040">
 					<li class="product-item">
-						<img src="img/slider-1.png" width="384" height="486" alt="Слайд 01">
-						<div>
+						<div class="product-photo">
+							<img src="img/slider-1.png" width="384" height="486" alt="Слайд 01">
+						</div>
+						<div class="product-info">
 							<h2><span class="hidden">Товар</span> 01</h2>
-							<b class="title-high">Делай селфи, как Бен Стиллер!</b>
-							<p class="product-descr">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+							<b class="title-high">Делай селфи, как&nbsp;Бен Стиллер!</b>
+							<p class="product-descr">Самая длинная палка для селфи доступна в нашем магазине. Восемь&nbsp;(Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 							<a class="btn" href="#">Подробнее</a>
 							<div class="product-data">
 								<h3 class="hidden">Характеристики</h3>
@@ -68,42 +72,54 @@
 				</ul>
 			</section>
 
-			<section class="categories">
+			<section class="categories container1160">
 				<h2 class="hidden">Каталог</h2>
 				<ul class="categories-list">
 					<li class="category-item">
 						<a href="#">
-							<img src="img/popular-1.png" width="97" height="55" alt="Виртуальная реальность">
+							<div class="category-photo">
+								<img src="img/popular-1.png" width="97" height="55" alt="Виртуальная реальность">
+							</div>
 							<h3>Виртуальная реальность</h3>
 						</a>
 					</li>
 					<li class="category-item">
 						<a href="#">
-							<img src="img/popular-2.png" width="86" height="117" alt="Моноподы для селфи">
+							<div class="category-photo">
+								<img src="img/popular-2.png" width="86" height="117" alt="Моноподы для&nbsp;селфи">
+							</div>
 							<h3>Моноподы для селфи</h3>
 						</a>
 					</li>
 					<li class="category-item">
 						<a href="#">
-							<img src="img/popular-3.png" width="71" height="87" alt="Экшн-камеры">
+							<div class="category-photo">
+								<img src="img/popular-3.png" width="71" height="87" alt="Экшн-камеры">
+							</div>
 							<h3>Экшн-камеры</h3>
 						</a>
 					</li>
 					<li class="category-item">
 						<a href="#">
-							<img src="img/popular-4.png" width="107" height="65" alt="Фитнес-браслеты">
-							<h3>Фитнес-браслеты</h3>
+							<div class="category-photo">
+								<img src="img/popular-4.png" width="107" height="65" alt="Фитнес-браслеты">
+							</div>
+							<h3>Фитнес-браслеты</h3>	
 						</a>
 					</li>
 					<li class="category-item">
 						<a href="#">
-							<img src="img/popular-5.png" width="56" height="98" alt="Умные часы">
+							<div class="category-photo">
+								<img src="img/popular-5.png" width="56" height="98" alt="Умные часы">
+							</div>
 							<h3>Умные часы</h3>
 						</a>
 					</li>
 					<li class="category-item">
 						<a href="#">
-							<img src="img/popular-6.png" width="132" height="69" alt="Квадрокоптеры">
+							<div class="category-photo">
+								<img src="img/popular-6.png" width="132" height="69" alt="Квадрокоптеры">
+							</div>
 							<h3>Квадрокоптеры</h3>
 						</a>
 					</li>
@@ -111,20 +127,22 @@
 			</section>
 
 			<section class="services">
-				<h2 class="hidden">Услуги</h2>
-				<ul class="services-list">
-					<li class="service-item"><a class="btn" href="#">Доставка</a></li>
-					<li class="service-item"><a class="btn" href="#">Гарантия</a></li>
-					<li class="service-item"><a class="btn" href="#">Кредит</a></li>
-				</ul>
-				<div>
-					<img src="img/delivery.svg" width="136" height="164" alt="Курьер">
-					<h3 class="title-high">Доставка</h3>
-					<p class="service-descr">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+				<div class="container1160">
+					<h2 class="hidden">Услуги</h2>
+					<ul class="services-list">
+						<li class="service-item"><a class="btn" href="#">Доставка</a></li>
+						<li class="service-item"><a class="btn" href="#">Гарантия</a></li>
+						<li class="service-item"><a class="btn" href="#">Кредит</a></li>
+					</ul>
+					<div class="service-info">
+						<img src="img/delivery.svg" width="136" height="164" alt="Курьер">
+						<h3 class="title-high">Доставка</h3>
+						<p class="service-descr">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+					</div>
 				</div>
 			</section>
 
-			<section class="partners">
+			<section class="partners container1160">
 				<h2 class="hidden">Партнеры</h2>
 				<ul class="partners-list">
 					<li class="partner-item"><img src="img/logo-1.png" width="260" height="100" alt="DJI"></li>
@@ -134,11 +152,11 @@
 				</ul>
 			</section>
 
-			<div class="wrapper">
+			<div class="about-and-contacts container1160">
 				<section class="about">
 					<h2 class="title-high">О нас</h2>
-					<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-					<p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+					<p class="about-descr-one">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+					<p class="about-descr-two">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
 					<ul class="about-delivery">
 						<li><a href="https://www.dellin.ru/" target="_blank">Деловые линии</a></li>
 						<li><a href="http://www.autotrading.ru/" target="_blank">Автотрейдинг</a></li>
@@ -156,40 +174,42 @@
 			</div>
 		</main>
 
-		<footer class="main-footer ">
-			<section class="footer-high">
-				<img class="main-logo" src="img/logo.svg" width="163" height="35" alt="Лого интернет-магазина гаджетов &mdash; Девайс">
-				<ul class="profile-navigation">
-					<li><a href="#">Войти</a></li>
-					<li><a href="#">Сравнить</a></li>
-					<li><a href="#">Корзина</a></li>
-				</ul>
-			</section>
-
-			<section class="footer-mid">
-				<div class="footer-contacts">
-					<h2 class="hidden">Как нас найти</h2>
-					<p>г. Москва, ул. Строителей, 15</p>
-				</div>
-				<ul class="site-navigation">
-					<li><a href="#">Доставка</a></li>
-					<li><a href="#">Гарантия</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
-				<p class="footer-phone">Тел.: <a href="tel:+74954959595">+7 (495) 495-95-95</a></p>
-			</section>
-
-			<section class="footer-low">
-				<div class="footer-social">
-					<h2 class="hidden">Мы в соцсетях</h2>
-					<ul>
-						<li><a href="#">Фейсбук</a></li>
-						<li><a href="#">Инстаграм</a></li>
-						<li><a href="#">Твиттер</a></li>
+		<footer class="main-footer">
+			<div class="container1160">
+				<section class="footer-high">
+					<a class="main-logo" href=""><img class="main-logo" src="img/logo.svg" width="163" height="35" alt="Лого интернет-магазина гаджетов &mdash; Девайс"></a>
+					<ul class="profile-navigation">
+						<li><a href="#">Войти</a></li>
+						<li><a href="#">Сравнить</a></li>
+						<li><a href="#">Корзина</a></li>
 					</ul>
-				</div>
-				<a class="footer-copyright" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
-			</section>
+				</section>
+
+				<section class="footer-mid">
+					<div class="footer-contacts">
+						<h2 class="hidden">Как нас найти</h2>
+						<p>г. Москва, ул. Строителей, 15</p>
+					</div>
+					<ul class="site-navigation">
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Гарантия</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+					<p class="footer-phone">Тел.: <a href="tel:+74954959595">+7 (495) 495-95-95</a></p>
+				</section>
+
+				<section class="footer-low">
+					<div class="footer-social">
+						<h2 class="hidden">Мы в соцсетях</h2>
+						<ul>
+							<li><a href="#">Фейсбук</a></li>
+							<li><a href="#">Инстаграм</a></li>
+							<li><a href="#">Твиттер</a></li>
+						</ul>
+					</div>
+					<a class="footer-copyright" href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>
+				</section>
+			</div>
 		</footer>
 	</body>
 </html>
