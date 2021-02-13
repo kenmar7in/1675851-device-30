@@ -115,13 +115,8 @@ img {
 	text-transform: uppercase;
 }
 
-.container1160 {
+.container {
 	width: 1160px;
-	margin: 0 auto;
-}
-
-.container1040 {
-	width: 1040px;
 	margin: 0 auto;
 }
 
@@ -147,7 +142,7 @@ img {
 .main-header .main-logo {
 	position: absolute;
 	top: -20px;
-	left: 0;
+	left: 60px;
 }
 
 .main-logo:hover,
@@ -180,7 +175,7 @@ img {
 .main-navigation {
 	position: relative;
 	display: grid;
-	padding-top: 44px;
+	padding: 44px 60px 0 60px;
 }
 
 .nav-section-top {
@@ -256,7 +251,8 @@ img {
 }
 
 .products-list {
-	padding: 0;
+	margin: 0;
+	padding: 0 60px;
 	list-style: none;
 }
 
@@ -404,7 +400,7 @@ img {
 	background-color: #fff;
 }
 
-.services .container1160 {
+.services .container {
 	display: grid;
 	grid-template-columns: 280px auto;
 	column-gap: 120px;
@@ -444,9 +440,10 @@ img {
 }
 
 .service-descr {
-	width: 500px;
+	width: 495px;
 	margin: 0;
 	line-height: 30px;
+	letter-spacing: 0.1em;
 }
 
 /* Partners */
@@ -462,6 +459,16 @@ img {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+}
+
+.partner-link img {
+	filter: grayscale(100%);
+	opacity: 0.2;
+}
+
+.partner-link:hover img {
+	filter: grayscale(0%);
+	opacity: 1;
 }
 
 /* About */
@@ -548,20 +555,20 @@ img {
 
 .footer-high {
 	display: grid;
-	grid-template-columns: auto auto;
+	grid-template-columns: auto 1fr;
 	margin-bottom: 40px;
 }
 
-.footer-high a {
+.footer-high .profile-navigation-link {
 	opacity: 0.7;
 }
 
-.footer-high a:hover,
-.footer-high a:focus {
+.footer-high .profile-navigation-link:hover,
+.footer-high .profile-navigation-link:focus {
 	opacity: var(--no-opacity);
 }
 
-.footer-high a:active {
+.footer-high .profile-navigation-link:active {
 	opacity: var(--mid-opacity);
 }
 
@@ -611,6 +618,10 @@ img {
 	margin-bottom: 50px;
 }
 
+.page-header .wrapper {
+	padding: 0 60px;
+}
+
 .page-header .title-high {
 	margin: 0;
 	margin-bottom: 30px;
@@ -645,13 +656,13 @@ img {
 	background-color: #dcdcdc;
 }
 
-.catalog-top .container1160 {
+.catalog-top .container {
 	display: grid;
 	grid-template-columns: 268px auto;
 	column-gap: 72px;
 }
 
-.catalog-top .container1160::before {
+.catalog-top .container::before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -676,7 +687,7 @@ img {
 	background-color: #e5e5e5;
 }
 
-.catalog-bottom .container1160 {
+.catalog-bottom .container {
 	display: grid;
 	grid-template-columns: 328px auto;
 	column-gap: 72px;
