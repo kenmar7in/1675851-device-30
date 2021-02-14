@@ -614,10 +614,14 @@ img {
 .footer-mid .site-navigation {
 	justify-self: center;
 	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 500px;
 }
 
 .footer-mid .site-navigation-item {
 	margin: 0 18px;
+	margin-bottom: 10px;
 }
 
 .footer-phone {
