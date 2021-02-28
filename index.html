@@ -53,7 +53,7 @@
 								<div class="dropdown">
 									<div class="dropdown-item">
 										<a class="dropdown-link" href="#">Виртуальная реальность</a>
-										<a class="dropdown-link" href="#">Моноподы для селфи</a>
+										<a class="dropdown-link" href="catalog.html">Моноподы для селфи</a>
 										<a class="dropdown-link" href="#">Экшн-камеры</a>
 									</div>
 									<div class="dropdown-item" href="#">
@@ -275,6 +275,42 @@
 					<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 					<img class="map" src="img/map.jpg" width="560" height="222" alt="Карта">
 					<a class="btn" href="#">Напишите нам</a>
+				</section>
+
+				<section class="modal modal-feedback">
+					<h2 class="visually-hidden">Обратная связь</h2>
+					<form class="form-feedback" action="https://echo.htmlacademy.ru" method="post">
+						<div class="feedback-group">
+							<div class="feedback-field name-field">
+								<label for="feedback-name">Ваше имя:</label>
+								<input id="feedback-name" type="text" name="name" placeholder="Имя Фамилия" required>
+							</div>
+							<div class="feedback-field email-field">
+								<label for="feedback-email">Ваш e-mail:</label>
+								<input id="feedback-email" type="email" name="email" placeholder="email@example.com" required>
+							</div>
+						</div>
+						<div class="feedback-field message-field">
+							<label for="feedback-message">Текст письма:</label>
+							<textarea id="feedback-message" name="message" placeholder="В свободной форме" required></textarea>
+						</div>
+						<button class="feedback-btn" type="submit">
+							<span class="btn">Отправить</span>
+						</button>
+					</form>
+					<button class="modal-close-btn feedback-close-btn" type="button">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.9499 19.725L9.9999 11.7625L2.0499 19.725L0.274902 17.95L8.2374 9.99997L0.274902 2.04996L2.0499 0.274963L9.9999 8.23747L17.9499 0.287464L19.7124 2.04996L11.7624 9.99997L19.7124 17.95L17.9499 19.725Z" fill="white"/></svg>
+						Закрыть
+					</button>
+				</section>
+
+				<section class="modal modal-map">
+					<h2 class="visually-hidden">Как нас найти?</h2>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931582563!3d55.68703098053581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1614525913343!5m2!1sru!2sru" width="960" height="550" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+					<button class="modal-close-btn map-close-btn" type="button">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.9499 19.725L9.9999 11.7625L2.0499 19.725L0.274902 17.95L8.2374 9.99997L0.274902 2.04996L2.0499 0.274963L9.9999 8.23747L17.9499 0.287464L19.7124 2.04996L11.7624 9.99997L19.7124 17.95L17.9499 19.725Z" fill="white"/></svg>
+						Закрыть
+					</button>
 				</section>
 			</div>
 		</main>
