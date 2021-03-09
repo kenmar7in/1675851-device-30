@@ -133,8 +133,8 @@ img {
 
 .btn:hover::before,
 .btn:focus::before,
-.service-item-current .btn::before,
-.service-item-current .btn::before {
+.service-item.current .btn::before,
+.service-item.current .btn::before {
 	height: 40px;
 }
 
@@ -497,7 +497,7 @@ img {
 	column-gap: 100px;
 }
 
-.product-item-3 {
+.product-item.current {
 	display: grid;
 }
 
@@ -572,6 +572,7 @@ img {
 
 .product-info .btn {
 	display: inline-block;
+	vertical-align: middle;
 	margin-bottom: 60px;
 }
 
@@ -748,12 +749,12 @@ img {
 }
 
 .service-item .btn:active,
-.service-item-current .btn {
+.service-item.current .btn {
 	color: var(--special-yellow);
 }
 
 .service-item .btn:active::before,
-.service-item-current .btn::before {
+.service-item.current .btn::before {
 	left: 0;
 	transform: translate(0, -50%);
 	width: 280px;
@@ -775,7 +776,7 @@ img {
 	display: none;
 }
 
-.info-item-current {
+.info-item.current {
 	display: block;
 }
 
@@ -791,7 +792,7 @@ img {
 }
 
 .info-item .service-descr {
-	width: 495px;
+	width: 500px;
 	margin: 0;
 	line-height: 30px;
 	letter-spacing: 0.1em;
@@ -912,8 +913,8 @@ img {
 /* contacts */
 
 .contacts {
-	display: grid;
-	grid-template-rows: auto auto 1fr;
+	display: flex;
+	flex-direction: column;
 }
 
 .contacts p {
@@ -923,7 +924,11 @@ img {
 }
 
 .map {
-	background-color: var(--basic-grey-light);
+	margin-bottom: auto;
+}
+
+.map img {
+	background-color: #f8f9fa;
 }
 
 /* main footer */
@@ -1352,7 +1357,7 @@ img {
 }
 
 .price-controls label {
-	font-family: "Gilroy";
+	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 300;
 	font-size: 14px;
 	line-height: 16px;
@@ -1692,14 +1697,24 @@ img {
 	display: none;
 	box-sizing: border-box;
 	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	top: calc(50% - 275px);
+	left: calc(50% - 480px);
 	z-index: 100;
 	width: 960px;
 	color: var(--basic-black);
 	background-color: var(--basic-white);
 	box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
+}
+
+.modal-show {
+	display: block;
+	animation-name: fromTop;
+	animation-duration: 400ms;
+}
+
+.modal-error {
+	animation-name: shake;
+	animation-duration: 400ms;
 }
 
 .modal-feedback {
@@ -1820,8 +1835,22 @@ img {
 }
 
 .modal-map iframe {
-	background: url("../img/map-large.jpg");
+	background-color: #f8f9fa;
+	background-image: url("../img/map-large.jpg");
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	background-size: cover;
+}
+
+/* animation */
+
+@keyframes fromTop {
+	0%		{transform: translateY(-200%);}
+	100%	{transform: translateY(0);}
+}
+
+@keyframes shake {
+	0%, 100% 									{transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% 	{transform: translateX(-10px);}
+	20%, 40%, 60%, 80%				{transform: translateX(10px);}
 }
