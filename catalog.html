@@ -8,7 +8,7 @@
 		<link rel="apple-touch-icon" href="img/180.png">
 		<link rel="manifest" href="manifest.webmanifest">
 		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.min.css">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body class="page-body inner-page">
 		<header class="main-header container">
@@ -143,14 +143,14 @@
 							<h2 class="visually-hidden">Фильтр товаров</h2>
 							<form class="filter" action="https://echo.htmlacademy.ru" method="get">
 								<fieldset>
-									<legend>Стоимость</legend>
+									<legend class="legend-range">Стоимость</legend>
 										<div class="range-filter">
 											<div class="range-controls">
 												<div class="scale">
 													<div class="bar" style="width: 50%"></div>
 												</div>
-												<div class="toggle toggle-min" style="left: 0"></div>
-												<div class="toggle toggle-max" style="left: calc(50% - 10px)"></div>
+												<div class="toggle toggle-min" style="left: 0" area-label="Минимальная цена"></div>
+												<div class="toggle toggle-max" style="left: calc(50% - 10px)" area-label="Максимальная цена"></div>
 											</div>
 											<div class="price-controls">
 												<label class="min-price">
@@ -179,11 +179,11 @@
 											<label for="filter-blue">Синий</label>
 										</li>
 										<li class="filter-option filter-checkbox">
-											<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="mtsred" id="filter-red" checked>
+											<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="mtsred" id="filter-red">
 											<label for="filter-red">Красный</label>
 										</li>
 										<li class="filter-option filter-checkbox">
-											<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="ponypink" id="filter-pink">
+											<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="ponypink" id="filter-pink" checked disabled>
 											<label for="filter-pink">Розовый</label>
 										</li>
 									</ul>
@@ -193,11 +193,11 @@
 									<legend class="legend-fix">Bluetooth</legend>
 									<ul>
 										<li class="filter-option filter-radio">
-											<input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="yes" id="filer-yes" checked>
+											<input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="yes" id="filer-yes" disabled>
 											<label for="filer-yes">Есть</label>
 										</li>
 										<li class="filter-option filter-radio">
-											<input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="no" id="filer-no">
+											<input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="no" id="filer-no" checked disabled>
 											<label for="filer-no">Нет</label>
 										</li>
 									</ul>
