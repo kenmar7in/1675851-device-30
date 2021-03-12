@@ -382,7 +382,7 @@ img {
 .site-navigation-group-two .site-navigation-item:nth-child(3) {
 	margin-right: 0;
 	margin-left: auto;
-	break-after: always;
+	page-break-after: always;
 }
 
 .site-navigation-group-two .site-navigation-item:nth-child(n + 4) {
@@ -906,7 +906,7 @@ img {
 	display: block;
 	width: 4px;
 	height: 4px;
-	border: 2px solid var(basic-grey-light);
+	border: 2px solid var(--basic-grey-light);
 	border-radius: 50%;
 }
 
