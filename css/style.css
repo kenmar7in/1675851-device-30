@@ -846,7 +846,7 @@ img {
 	grid-template-columns: 500px auto;
 	column-gap: 100px;
 	margin-bottom: 85px;
-	padding-top: 60px;
+	padding-top: 55px;
 }
 
 .about,
@@ -1372,7 +1372,7 @@ img {
 }
 
 .range-controls .scale {
-	width: calc(100% - 20px);
+	width: 100%;
 	height: 2px;
 	background: var(--range-bar);
 }
@@ -1414,7 +1414,6 @@ img {
 
 .price-controls {
 	display: flex;
-	justify-content: space-between;
 }
 
 .price-controls input {
@@ -1424,6 +1423,10 @@ img {
 	background-color: var(--basic-grey-light);
 	border: none;
 	outline: none;
+}
+
+.price-controls input[name="min-price"] {
+	margin-right: 12px;
 }
 
 /* sorter */
@@ -1518,12 +1521,12 @@ img {
 	cursor: pointer;
 }
 
-.order-item-current .order-link svg {
-	opacity: 0.2;
-}
-
 .order-item-current .order-link {
 	cursor: auto;
+}
+
+.order-link svg {
+	opacity: 1;
 }
 
 .order-item .order-link:hover svg,
@@ -1531,16 +1534,14 @@ img {
 	opacity: 0.4;
 }
 
-.order-item-current .order-link:hover svg,
-.order-item-current .order-link:focus svg	{
-	opacity: 0.2;
-}
-
 .order-item .order-link:active svg {
 	opacity: 1;
 }
 
-.order-item-current .order-link:active svg	{
+.order-item-current .order-link svg,
+.order-item-current .order-link:hover svg,
+.order-item-current .order-link:focus svg,
+.order-item-current .order-link:active svg {
 	opacity: 0.2;
 }
 
@@ -1629,6 +1630,7 @@ img {
 }
 
 .catalog-item-links {
+	box-sizing: border-box;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -1637,6 +1639,7 @@ img {
 	width: calc(100% - 5px);
 	height: calc(100% - 5px);
 	display: none;
+	padding-top: 50px;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
