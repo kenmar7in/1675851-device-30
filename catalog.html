@@ -19,7 +19,8 @@
 					</a>
 					<div class="nav-section-top">
 						<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-							<input class="search-input" type="search" placeholder="Поиск по сайту">
+							<label for="search-input-id">Поиск по сайту</label>
+							<input class="search-input" id="search-input-id" type="search" placeholder="Поиск по сайту">
 							<button class="search-btn" type="submit">Найти</button>
 						</form>
 						<ul class="profile-navigation">
@@ -115,22 +116,22 @@
 							<h2 class="visually-hidden">Сортировка товаров</h2>
 							<p class="title-mid">Сортировка:</p>
 							<ul class="sorter-list">
-								<li class="sorter-item sorter-item-current"><button type="button">По цене</button></li>
-								<li class="sorter-item"><button type="button">По типу</button></li>
-								<li class="sorter-item"><button type="button">По популярности</button></li>
+								<li class="sorter-item sorter-item-current"><a href="#">По цене</a></li>
+								<li class="sorter-item"><a href="#">По типу</a></li>
+								<li class="sorter-item"><a href="#">По популярности</a></li>
 							</ul>
 							<ul class="order-list">
 								<li class="order-item order-item-current">
-									<button class="order-link" type="button">
+									<a href="#" class="order-link">
 										По возрастанию
 										<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 10H11L5.5 0L0 10Z" fill="black"/></svg>
-									</button>
+									</a>
 								</li>
 								<li class="order-item">
-									<button class="order-link" type="button">
+									<a href="#" class="order-link">
 										По убыванию
 										<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 0L0 0L5.5 10L11 0Z" fill="black"/></svg>
-									</button>
+									</a>
 								</li>
 							</ul>
 						</div>
@@ -149,8 +150,8 @@
 												<div class="scale">
 													<div class="bar" style="width: 62%"></div>
 												</div>
-												<div class="toggle toggle-min" style="left: 0" area-label="Минимальная цена"></div>
-												<div class="toggle toggle-max" style="left: calc(62% - 10px)" area-label="Максимальная цена"></div>
+												<div class="toggle toggle-min" style="left: 0">Минимальная цена</div>
+												<div class="toggle toggle-max" style="left: calc(62% - 10px)">Максимальная цена</div>
 											</div>
 											<div class="price-controls">
 												<label class="min-price">
@@ -210,69 +211,71 @@
 						</section>
 
 						<section class="catalog">
-							<article class="catalog-item">
-								<div class="catalog-photo">
-									<img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-									<div class="catalog-item-links">
-										<a class="btn" href="#">В корзину</a>
-										<a class="btn-add-to-match" href="#">Добавить к сравнению</a>
+							<div class="catalog-cont">
+								<article class="catalog-item">
+									<div class="catalog-photo">
+										<img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+										<div class="catalog-item-links">
+											<a class="btn" href="#">В корзину</a>
+											<a class="btn-add-to-match" href="#">Добавить к сравнению</a>
+										</div>
 									</div>
-								</div>
-								<div class="catalog-item-descr">
-									<a href="#">
-										<h3>Любительская селфи-палка</h3>
-									</a>
-									<p>1 100 руб.</p>
-								</div>	
-							</article>
+									<div class="catalog-item-descr">
+										<a href="#">
+											<h3>Любительская селфи&#8209;палка</h3>
+										</a>
+										<p>1 100 руб.</p>
+									</div>	
+								</article>
 
-							<article class="catalog-item">
-								<div class="catalog-photo">
-									<img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-									<div class="catalog-item-links">
-										<a class="btn" href="#">В корзину</a>
-										<a class="btn-add-to-match" href="#">Добавить к сравнению</a>
+								<article class="catalog-item">
+									<div class="catalog-photo">
+										<img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+										<div class="catalog-item-links">
+											<a class="btn" href="#">В корзину</a>
+											<a class="btn-add-to-match" href="#">Добавить к сравнению</a>
+										</div>
 									</div>
-								</div>
-								<div class="catalog-item-descr">
-									<a href="#">
-										<h3>Профессиональная селфи-палка</h3>
-									</a>
-									<p>1 500 руб.</p>
-								</div>
-							</article>
+									<div class="catalog-item-descr">
+										<a href="#">
+											<h3>Профессиональная селфи&#8209;палка</h3>
+										</a>
+										<p>1 500 руб.</p>
+									</div>
+								</article>
 
-							<article class="catalog-item">	
-								<div class="catalog-photo">
-									<img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-									<div class="catalog-item-links">
-										<a class="btn" href="#">В корзину</a>
-										<a class="btn-add-to-match" href="#">Добавить к сравнению</a>
+								<article class="catalog-item">	
+									<div class="catalog-photo">
+										<img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+										<div class="catalog-item-links">
+											<a class="btn" href="#">В корзину</a>
+											<a class="btn-add-to-match" href="#">Добавить к сравнению</a>
+										</div>
 									</div>
-								</div>
-								<div class="catalog-item-descr">
-									<a href="#">
-										<h3>Непотопляемая селфи-палка</h3>
-									</a>
-									<p>1 500 руб.</p>
-								</div>
-							</article>
+									<div class="catalog-item-descr">
+										<a href="#">
+											<h3>Непотопляемая селфи&#8209;палка</h3>
+										</a>
+										<p>1 500 руб.</p>
+									</div>
+								</article>
 
-							<article class="catalog-item catalog-item-new">
-								<div class="catalog-photo">	
-									<img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-									<div class="catalog-item-links">
-										<a class="btn" href="#">В корзину</a>
-										<a class="btn-add-to-match" href="#">Добавить к сравнению</a>
+								<article class="catalog-item catalog-item-new">
+									<div class="catalog-photo">	
+										<img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+										<div class="catalog-item-links">
+											<a class="btn" href="#">В корзину</a>
+											<a class="btn-add-to-match" href="#">Добавить к сравнению</a>
+										</div>
 									</div>
-								</div>
-								<div class="catalog-item-descr">
-									<a href="#">
-										<h3>Селфи-палка «Следуй за мной»</h3>
-									</a>
-									<p>1 900 руб.</p>
-								</div>
-							</article>
+									<div class="catalog-item-descr">
+										<a href="#">
+											<h3>Селфи&#8209;палка «Следуй за мной»</h3>
+										</a>
+										<p>1 900 руб.</p>
+									</div>
+								</article>
+							</div>
 
 							<div class="pagination">
 								<a class="pagination-link pagination-link-prev disabled">Назад</a>
@@ -303,22 +306,22 @@
 					</a>
 					<ul class="profile-navigation">
 						<li class="profile-navigation-item profile-navigation-login">
-							<a class="profile-navigation-link customer-link" href="#">
+							<a class="profile-navigation-link f-profile-navigation-link customer-link" href="#">
 								<svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.49996 0.333328C5.69704 0.333328 6.66663 1.3775 6.66663 2.66666C6.66663 3.95583 5.69704 5 4.49996 5C3.30288 5 2.33329 3.95583 2.33329 2.66666C2.33329 1.3775 3.30288 0.333328 4.49996 0.333328ZM4.49996 9.66666C4.49996 9.66666 8.83329 9.66666 8.83329 8.5C8.83329 7.1 6.72079 5.58333 4.49996 5.58333C2.27913 5.58333 0.166626 7.1 0.166626 8.5C0.166626 9.66666 4.49996 9.66666 4.49996 9.66666Z" fill="#ffc600"/></svg>
 								<span>Евгений Максутов</span>
 							</a>
-							<a class="profile-navigation-link logout-link" href="#">
+							<a class="profile-navigation-link f-profile-navigation-link logout-link" href="#">
 								<span>Выйти</span>
 							</a>
 						</li>
 						<li class="profile-navigation-item profile-navigation-compare">
-							<a class="profile-navigation-link" href="#">
+							<a class="profile-navigation-link f-profile-navigation-link" href="#">
 								<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.916748 3.36667H2.66675V9.08334H0.916748V3.36667ZM4.18342 0.916672H5.81675V9.08334H4.18342V0.916672ZM7.45008 5.58334H9.08342V9.08334H7.45008V5.58334Z" fill="#ffc600"/></svg>
 								<span>Сравнить</span>
 							</a>
 						</li>
 						<li class="profile-navigation-item profile-navigation-basket">
-							<a class="profile-navigation-link" href="#">
+							<a class="profile-navigation-link f-profile-navigation-link" href="#">
 								<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.86215 2.5217C9.79278 2.43991 9.69341 2.39316 9.58927 2.39316H7.65774V3.4188C7.65774 3.89008 7.25359 4.2735 6.75684 4.2735C6.26008 4.2735 5.85593 3.89008 5.85593 3.4188V2.39316H4.05413V3.4188C4.05413 3.89008 3.64999 4.2735 3.15323 4.2735C2.65648 4.2735 2.25233 3.89008 2.25233 3.4188V2.39316H0.32089C0.216656 2.39316 0.117286 2.43991 0.0479169 2.5217C-0.0215425 2.6035 -0.0544254 2.71256 -0.0425335 2.82145L0.605665 8.78461C0.617737 9.45692 1.14179 9.99999 1.78431 9.99999H8.12584C8.76828 9.99999 9.29233 9.45692 9.30449 8.78452L9.95269 2.82136C9.96449 2.71256 9.93161 2.6035 9.86215 2.5217Z" fill="#ffc600"/><path d="M3.15333 3.76068C3.35207 3.76068 3.51369 3.60735 3.51369 3.4188V1.53846C3.51369 1.01051 4.07486 0.683761 4.59477 0.683761H5.49567C6.04288 0.683761 6.39657 1.01923 6.39657 1.53846V3.4188C6.39657 3.60735 6.55829 3.76068 6.75693 3.76068C6.95558 3.76068 7.11729 3.60735 7.11729 3.4188V1.53846C7.11729 0.647009 6.43531 0 5.49567 0H4.59477C3.60126 0 2.79297 0.690171 2.79297 1.53846V3.4188C2.79297 3.60735 2.95459 3.76068 3.15333 3.76068Z" fill="#ffc600"/></svg>
 								<span>Корзина</span>
 							</a>

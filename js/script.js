@@ -53,6 +53,8 @@ const	form = feedbackPopup.querySelector("form"),
 form.addEventListener("submit", function(evt) {
 	if (!userName.value || !userEmail.value || !userMessage.value) {
 		evt.preventDefault();
+		feedbackPopup.classList.remove("modal-error");
+		feedbackPopup.offsetWidth = feedbackPopup.offsetWidth;
 		feedbackPopup.classList.add("modal-error");
 	} else {
 		if (isStorageSupport) {
@@ -100,13 +102,13 @@ for (var i = 0; len = controls.length, i < len; i++) {
 	(function(index) {
 		controls[i].addEventListener("click", function() {
 			for (var i = 0; len = controls.length, i < len; i++) {
-				controls[i].classList.remove('current');
-				this.classList.add('current');
+				controls[i].classList.remove("current");
+				this.classList.add("current");
 			}
 
 			for (var i = 0; len = products.length, i < len; i++) {
-				products[i].classList.remove('current');
-				products[index].classList.add('current');
+				products[i].classList.remove("current");
+				products[index].classList.add("current");
 			}
 		});
 	})(i);
@@ -123,13 +125,13 @@ for (var i = 0; len = serviceButtons.length, i < len; i++) {
 			evt.preventDefault();
 
 			for (var i = 0; len = serviceButtons.length, i < len; i++) {
-				serviceButtons[i].classList.remove('current');
-				this.classList.add('current');
+				serviceButtons[i].classList.remove("current");
+				this.classList.add("current");
 			}
 
 			for (var i = 0; len = services.length, i < len; i++) {
-				services[i].classList.remove('current');
-				services[index].classList.add('current');
+				services[i].classList.remove("current");
+				services[index].classList.add("current");
 			}
 		});
 	})(i);
