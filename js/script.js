@@ -29,17 +29,17 @@ closeFeedback.addEventListener("click", function(evt) {
 	feedbackPopup.classList.remove("modal-error");
 });
 
-mapLink.addEventListener("click", function(evt) {
-	evt.preventDefault();
+// mapLink.addEventListener("click", function(evt) {
+// 	evt.preventDefault();
 
-	mapPopup.classList.add("modal-show");
-});
+// 	mapPopup.classList.add("modal-show");
+// });
 
-closeMap.addEventListener("click", function(evt) {
-	evt.preventDefault();
+// closeMap.addEventListener("click", function(evt) {
+// 	evt.preventDefault();
 
-	mapPopup.classList.remove("modal-show");
-});
+// 	mapPopup.classList.remove("modal-show");
+// });
 
 // feedback form
 

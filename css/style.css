@@ -267,7 +267,7 @@ img {
 .search-input,
 .search-input::placeholder {
 	font: inherit;
-	line-height: 48px;
+	line-height: 20px;
 }
 
 .search-input::placeholder {
@@ -989,7 +989,7 @@ img {
 .footer-high {
 	display: grid;
 	grid-template-columns: auto 560px;
-	margin-bottom: 37px;
+	margin-bottom: 35px;
 }
 
 .footer-high .main-logo {
@@ -1023,7 +1023,7 @@ img {
 	display: grid;
 	grid-template-columns: 260px 1fr 260px;
 	align-items: center;
-	margin-bottom: 58px;
+	margin-bottom: 62px;
 }
 
 .footer-mid p {
@@ -1041,7 +1041,7 @@ img {
 }
 
 .footer-mid .site-navigation-item {
-	margin: 0 18px;
+	margin: 0 16px;
 	margin-bottom: 5px;
 }
 
@@ -1265,7 +1265,7 @@ img {
 }
 
 .filter-option {
-	margin-bottom: 20px;
+	margin-bottom: 21px;
 }
 
 .filter-option:last-child {
@@ -1274,7 +1274,7 @@ img {
 
 .filter fieldset {
 	margin: 0;
-	margin-bottom: 52px;
+	margin-bottom: 54px;
 	padding: 0;
 	border: 0;
 }
@@ -1290,7 +1290,7 @@ img {
 .filter legend {
 	position: relative;
 	margin-top: 16px;
-	margin-bottom: 35px;
+	margin-bottom: 32px;
 	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
 	font-size: 14px;
@@ -1301,7 +1301,7 @@ img {
 .filter legend::before {
 	content: "";
 	position: absolute;
-	top: -14px;
+	top: -16px;
 	left: 0;
 	width: 200px;
 	height: 2px;
@@ -1315,11 +1315,15 @@ img {
 .filter-option label {
 	position: relative;	
 	display: block;
-	padding-left: 44px;
+	padding-left: 42px;
 	font-size: 14px;
 	line-height: 19px;
 	cursor: pointer;
 	user-select: none;
+}
+
+.filter-radio label {
+	padding-left: 40px;
 }
 
 .filter-input-checkbox + label::before {
@@ -1838,7 +1842,7 @@ img {
 .feedback-field textarea {
 	font: inherit;
 	font-size: 14px;
-	line-height: 16px;
+	line-height: 19px;
 	background-color: var(--fb-field);
 	border: none;
 }
@@ -1867,12 +1871,12 @@ img {
 }
 
 .feedback-field input {
-	padding: 17px 20px;
+	padding: 15px 20px;
 }
 
 .feedback-field textarea {
 	box-sizing: border-box;
-	height: 165px;
+	height: 167px;
 	padding: 17px 20px;
 	resize: none;
 }
@@ -1895,7 +1899,7 @@ img {
 
 .modal-close-btn {
 	position: absolute;
-	top: 20px;
+	top: 18px;
 	right: 20px;
 	display: flex;
 	justify-content: center;
